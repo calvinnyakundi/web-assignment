@@ -1,0 +1,199 @@
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    background: #559ff5;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    padding: 0 100px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.active,
+a:hover {
+    text-decoration: underline;
+    transition: 5sec;
+}
+.checkbtn{
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 35px;
+    padding-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.fas{
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-top: 27px;
+    display: none;*/
+}
+.image{
+width: 100%;
+}
+@media screen(max-width:952) {
+  label.logo{
+       font: size 30px;
+       padding: left 50px;
+    }  
+    nav ul li a{
+         font-size: 16px;
+
+    }
+    
+}
+@media screen(max-width:858){
+    .checkbtn{
+         display:block;
+         
+    }
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#327fb3,#7f4697);
+    height: 100vh;
+    overflow: hidden;
+}  
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.text_field{
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px 0px;
+}
+.text_field input{
+    width: 100%;
+    padding: 0 5px ;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.text_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: silver;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.text_field span::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #327fb3;
+    transition: .10s;
+}
+
+.text_field input:focus ~ label,
+.text_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9
+
+}
+
+.text_field input:focus ~ span::before,
+.text_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.pass :hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: steelblue;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color:steelblue ;
+    transition: 5s;
+}
+.signup{
+    margin: 30px 0;
+    text-align: center;
+    color: #666666;
+}
+.signup a{
+    color: steelblue;
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,56 @@
+*{
+ padding:0px;
+ margin: 0px;
+}
+.navbar{
+    background-color: rgb(53, 12, 236);
+    color: rgb(225, 241, 241);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    font-size: 12px;
+}
+.nav-list{
+    list-style: none;
+}
+.nav-list.item{
+    display: inline-block;
+    padding-left: 50px;
+
+}
+.navbar a:hover{
+    color: aqua;
+}
+.menu{
+    display:none ;
+}
+.menu-lines{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin-top: 3px;
+}
+@media all and (max-width: 480px)
+{
+    
+    .navbar {
+        flex-direction: column;
+    } 
+    .menu { 
+        display:block;
+        position: absolute;
+        right: 10px; 
+        top: 5px;
+    }
+    .item{
+        display: block;
+    }
+   
+   
+}
+
+
+
+
+    

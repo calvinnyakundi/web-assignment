@@ -1,0 +1,86 @@
+
+* {
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+     list-style: none;
+}
+
+nav {
+     background: #559ff5;
+     height: 80px;
+     width: 100%;
+}
+
+.logo {
+     color: white;
+     font-size: 30px;
+     padding: 0 100px;
+     font-weight: bold;
+     line-height: 80px;
+}
+
+nav ul {
+     float: right;
+     margin-right: 30px;
+}
+
+nav ul li {
+     display: inline;
+     line-height: 80px;
+     margin: 0 5px;
+}
+
+nav ul li a {
+     color: white;
+     font-size: 15px;
+     text-transform: uppercase;
+     border-radius: 2px;
+}
+
+.active,
+a:hover {
+     background: #909ff3;
+     transition: 5sec;
+}
+.checkbtn{
+     color: aliceblue;
+     float: right;
+     line-height: 80px;
+     margin-right: 35px;
+     padding-top: 20px;
+     cursor: pointer;
+     display: none;
+}
+#check{
+     display: none;
+}
+.fas{
+    /* color: white;
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     margin-top: 27px;
+     display: none;*/
+}
+.image{
+width: 100%;
+}
+@media screen(max-width:952) {
+   label.logo{
+        font: size 30px;
+        padding: left 50px;
+     }  
+     nav ul li a{
+          font-size: 16px;
+
+     }
+     
+}
+@media screen(max-width:858){
+     .checkbtn{
+          display:block;
+          
+     }
+}
